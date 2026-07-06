@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ikhlaas Ahamed Abdou — Développeur Full-Stack</title>
+<meta name="description" content="Portfolio d'Ikhlaas Ahamed Abdou, développeur full-stack diplômé en Systèmes Informatiques et Logiciel. Next.js, React, Node.js, PostgreSQL, Supabase.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progress"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">Ikhlaas<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#apropos" data-nav>À propos</a></li>
+      <li><a href="#competences" data-nav>Compétences</a></li>
+      <li><a href="#projets" data-nav>Projets</a></li>
+      <li><a href="#formation" data-nav>Formation</a></li>
+      <li><a href="#langues" data-nav>Langues</a></li>
+      <li><a href="#contact" data-nav class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <canvas id="hero-particles"></canvas>
+  <div class="hero-inner">
+    <div data-reveal="left">
+      <div class="hero-badge"><span class="dot"></span> Disponible — 1er emploi / collaboration</div>
+      <h1>Développeur<br><span class="accent">Full-Stack</span></h1>
+      <p class="hero-sub">
+        Diplômé d'une <strong>Licence Professionnelle en Systèmes Informatiques et Logiciel</strong> (Mention Excellente).
+        Je conçois des applications web modernes — de l'interface utilisateur au serveur — avec une stack
+        <strong>Next.js · React · Node.js · PostgreSQL</strong>.
+      </p>
+      <div class="hero-cta">
+        <a href="#projets" class="btn btn-primary">
+          Voir mes projets
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-outline">Me contacter</a>
+      </div>
+      <div class="hero-meta">
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Cotonou, Bénin
+        </span>
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          Réponse sous 24h
+        </span>
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+          Disponible immédiatement
+        </span>
+      </div>
+    </div>
+
+    <div class="hero-card" data-reveal="right">
+      <div class="hero-photo">
+        <img src="photo_ikhlaas.jpg" alt="Ikhlaas Ahamed Abdou — Développeur Full-Stack" loading="eager" decoding="async">
+        <span class="hero-photo-badge">Diplômé · Mention Excellente</span>
+      </div>
+      <div class="hero-card-name">Ikhlaas Ahamed Abdou</div>
+      <div class="hero-card-role">DÉVELOPPEUR FULL-STACK · COTONOU</div>
+      <div class="hero-stats">
+        <div class="stat"><span class="num" data-count="6">0</span><div class="lbl">Projets réalisés</div></div>
+        <div class="stat"><span class="num" data-count="3">0</span><div class="lbl">Ans de formation</div></div>
+        <div class="stat"><span class="num" data-count="9" data-suffix="+">0</span><div class="lbl">Technologies</div></div>
+        <div class="stat"><span class="num" data-count="3">0</span><div class="lbl">Langues parlées</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- À PROPOS -->
+<section class="about" id="apropos">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div class="section-label">Qui suis-je</div>
+      <h2 class="section-title">À <em>propos</em></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text" data-reveal="left">
+        <p>
+          Je suis <strong>Ikhlaas Ahamed Abdou</strong>, développeur full-stack fraîchement diplômé d'une
+          Licence Professionnelle en Systèmes Informatiques et Logiciel à l'<strong>UATM GASA-FORMATION</strong> à Cotonou.
+          Mon projet de fin d'études — un système complet de gestion commerciale — a été soutenu en binôme
+          avec la <strong>Mention Excellente</strong>.
+        </p>
+        <p>
+          Au fil de ma formation, j'ai eu l'opportunité de travailler sur des projets concrets alliant
+          <strong>conception d'interfaces</strong> (Figma), <strong>modélisation de données</strong> (Merise, UML)
+          et <strong>développement full-stack</strong> (Next.js, React, Node.js, Supabase/PostgreSQL).
+          Je suis aussi à l'aise sur des projets personnels en JavaScript vanilla ou en C++ orienté objet.
+        </p>
+        <p>
+          Curieux et autodidacte, je me forme en continu — notamment via <strong>OpenClassrooms</strong> —
+          et je cherche aujourd'hui une équipe dynamique où mettre mes compétences au service de problèmes
+          concrets. Mon objectif : devenir un développeur full-stack polyvalent, capable de concevoir des
+          solutions complètes, de l'interface utilisateur au serveur.
+        </p>
+        <div class="about-quote">
+          « Le code propre, ce n'est pas ce que l'on peut écrire, mais ce que l'on peut laisser parler
+          en silence. »
+        </div>
+      </div>
+
+      <div class="about-info" data-reveal="right">
+        <div class="info-row">
+          <div class="info-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div>
+            <div class="info-label">Diplôme</div>
+            <div class="info-value">Licence Pro — Systèmes Informatiques</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4 8 4v14M9 21v-4h6v4"/></svg>
+          </div>
+          <div>
+            <div class="info-label">Université</div>
+            <div class="info-value">UATM GASA-FORMATION — Cotonou</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="info-label">Localisation</div>
+            <div class="info-value">C/703 Gbégamey Centre, Cotonou</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <div>
+            <div class="info-label">Nationalité</div>
+            <div class="info-value">Comorienne</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div>
+            <div class="info-label">LinkedIn</div>
+            <div class="info-value">
+              <a href="https://www.linkedin.com/in/ikhlaas-ahamed-abdou-5514a9420" target="_blank" rel="noopener">ikhlaas-ahamed-abdou</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPÉTENCES -->
+<section class="skills" id="competences">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div class="section-label">Stack technique</div>
+      <h2 class="section-title"><em>Compétences</em></h2>
+      <p class="section-intro">
+        Une stack moderne orientée full-stack JavaScript, complétée par mes bases solides en
+        programmation système, en modélisation de données, en design d'interfaces et en
+        développement mobile cross-platform avec Flutter.
+      </p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card" data-reveal>
+        <div class="skill-head">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <div>
+            <div class="skill-cat">Frontend</div>
+            <div class="skill-sub">/ user interface</div>
+          </div>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item"><span class="skill-name">JavaScript / TypeScript</span><div class="skill-rating" data-rating="4"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span class="skill-name">React 18</span><div class="skill-rating" data-rating="4"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span class="skill-name">Next.js 14 (App Router)</span><div class="skill-rating" data-rating="4"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span class="skill-name">Tailwind CSS</span><div class="skill-rating" data-rating="4"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span class="skill-name">HTML / CSS</span><div class="skill-rating" data-rating="5"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card" data-reveal>
+        <div class="skill-head">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <div>
+            <div class="skill-cat">Backend</div>
+            <div class="skill-sub">/ server & api</div>
+          </div>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item"><span class="skill-name">Node.js</span><div class="skill-rating" data-rating="3"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span class="skill-name">PHP</span><div class="skill-rating" data-rating="3"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span class="skill-name">Auth JWT & rôles</span><div class="skill-rating" data-rating="4"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span class="skill-name">API REST / CRUD</span><div class="skill-rating" data-rating="4"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span class="skill-name">Python</span><div class="skill-rating" data-rating="3"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card" data-reveal>
+        <div class="skill-head">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0018 0V5"/><path d="M3 12a9 3 0 0018 0"/></svg>
+          </div>
+          <div>
+            <div class="skill-cat">Bases de données</div>
+            <div class="skill-sub">/ modeling & storage</div>
+          </div>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item"><span class="skill-name">PostgreSQL / Supabase</span><div class="skill-rating" data-rating="4"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span class="skill-name">MySQL</span><div class="skill-rating" data-rating="4"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span class="skill-name">Merise (MCD / MLD)</span><div class="skill-rating" data-rating="4"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span class="skill-name">UML</span><div class="skill-rating" data-rating="4"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card" data-reveal>
+        <div class="skill-head">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div>
+            <div class="skill-cat">Outils & Design</div>
+            <div class="skill-sub">/ workflow</div>
+          </div>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item"><span class="skill-name">Git / GitHub</span><div class="skill-rating" data-rating="4"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span class="skill-name">Figma (UI/UX)</span><div class="skill-rating" data-rating="3"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span class="skill-name">Visual Studio Code</span><div class="skill-rating" data-rating="4"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span class="skill-name">C / C++ (POO)</span><div class="skill-rating" data-rating="4"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span class="skill-name">Microsoft Office</span><div class="skill-rating" data-rating="4"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card" data-reveal>
+        <div class="skill-head">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <div>
+            <div class="skill-cat">Mobile</div>
+            <div class="skill-sub">/ cross-platform</div>
+          </div>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item"><span class="skill-name">Flutter</span><div class="skill-rating" data-rating="3"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span class="skill-name">Dart</span><div class="skill-rating" data-rating="3"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span class="skill-name">Material Design</span><div class="skill-rating" data-rating="3"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div class="skill-item"><span class="skill-name">Navigation &amp; Auth</span><div class="skill-rating" data-rating="3"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJETS -->
+<section class="projects" id="projets">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div class="section-label">Réalisations</div>
+      <h2 class="section-title">Mes <em>projets</em></h2>
+      <p class="section-intro">
+        Six projets allant d'un système d'information full-stack soutenu en binôme à des applications
+        personnelles en JavaScript, React et Flutter. Chacun m'a appris quelque chose de différent.
+      </p>
+    </div>
+
+    <div class="projects-grid">
+      <!-- 1. Mont Sinaï -->
+      <article class="project-card" data-reveal>
+        <div class="project-banner"></div>
+        <div class="project-body">
+          <div class="project-top">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1-5h16l1 5"/><path d="M5 9v11h14V9"/><path d="M9 13h6"/></svg>
+            </div>
+            <div class="project-badges">
+              <span class="badge badge-gold">Mention Excellente</span>
+              <span class="badge badge-emerald">Projet de fin d'études</span>
+            </div>
+          </div>
+          <h3 class="project-title">Gestion Commerciale Mont Sinaï</h3>
+          <div class="project-meta">
+            <span>2025 – 2026</span><span class="dot"></span>
+            <span>Binôme</span><span class="dot"></span>
+            <span>Supermarché, Cotonou</span>
+          </div>
+          <p class="project-desc">
+            Système d'information complet pour la gestion d'un supermarché : authentification multi-rôles,
+            modules CRUD couvrant toute la chaîne (produits, stocks, achats, ventes), et tableau de bord
+            temps réel avec alertes automatiques.
+          </p>
+          <ul class="project-bullets">
+            <li>Authentification JWT & gestion des rôles : Gérant, Responsable Achats, Chef de Rayon, Caissier</li>
+            <li>Modules CRUD : produits, stocks, commandes fournisseurs, ventes, réceptions</li>
+            <li>Alertes automatiques : rupture, seuil minimal, péremption</li>
+            <li>Dashboard KPIs temps réel avec Recharts</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag">Next.js 14</span><span class="tag">React 18</span><span class="tag">Tailwind</span>
+            <span class="tag">Zustand</span><span class="tag">Supabase</span><span class="tag">PostgreSQL</span><span class="tag">JWT</span><span class="tag">Recharts</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. CNHU -->
+      <article class="project-card" data-reveal>
+        <div class="project-banner"></div>
+        <div class="project-body">
+          <div class="project-top">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="4"/></svg>
+            </div>
+            <div class="project-badges">
+              <span class="badge badge-emerald">Projet académique</span>
+            </div>
+          </div>
+          <h3 class="project-title">Système de gestion médicale (CNHU)</h3>
+          <div class="project-meta">
+            <span>Déc. 2024 – Fév. 2025</span><span class="dot"></span>
+            <span>Conception</span>
+          </div>
+          <p class="project-desc">
+            Conception d'un système d'information médical pour le Centre National Hospitalier Universitaire
+            du Bénin, avec un focus sur la modélisation des données et le design d'interface.
+          </p>
+          <ul class="project-bullets">
+            <li>Conception d'une interface utilisateur avec Figma</li>
+            <li>Modélisation des données via Merise (MCD / MLD)</li>
+            <li>Implémentation de la base sous MySQL</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag">Figma</span><span class="tag">Merise</span><span class="tag">MySQL</span><span class="tag">UI/UX</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. Dactylo -->
+      <article class="project-card" data-reveal>
+        <div class="project-banner"></div>
+        <div class="project-body">
+          <div class="project-top">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h.01M10 8h.01M14 8h.01M18 8h.01M8 12h.01M12 12h.01M16 12h.01M7 16h10"/></svg>
+            </div>
+            <div class="project-badges">
+              <span class="badge badge-outline">Projet personnel</span>
+            </div>
+          </div>
+          <h3 class="project-title">Dactylo — Jeu de saisie au clavier</h3>
+          <div class="project-meta">
+            <span>Juillet – Août 2025</span><span class="dot"></span>
+            <span>OpenClassrooms</span>
+          </div>
+          <p class="project-desc">
+            Application de frappe au clavier où le texte saisi est comparé en temps réel au texte affiché.
+            Projet personnel réalisé dans le cadre du parcours JavaScript sur OpenClassrooms.
+          </p>
+          <ul class="project-bullets">
+            <li>Comparaison caractère par caractère en temps réel</li>
+            <li>Manipulation approfondie du DOM en JavaScript vanilla</li>
+            <li>Gestion des scores et statistiques de frappe</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span><span class="tag">DOM</span><span class="tag">HTML/CSS</span><span class="tag">Vanilla JS</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. Carte anniversaire -->
+      <article class="project-card" data-reveal>
+        <div class="project-banner"></div>
+        <div class="project-body">
+          <div class="project-top">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </div>
+            <div class="project-badges">
+              <span class="badge badge-outline">Projet personnel</span>
+            </div>
+          </div>
+          <h3 class="project-title">Carte d'anniversaire interactive</h3>
+          <div class="project-meta">
+            <span>Sept. – Oct. 2025</span><span class="dot"></span>
+            <span>React</span>
+          </div>
+          <p class="project-desc">
+            Carte d'anniversaire animée en React avec une séquence d'ouverture cinématique et un album
+            photo en forme de cœur. Projet personnel pour mettre en pratique les animations React.
+          </p>
+          <ul class="project-bullets">
+            <li>Animation d'ouverture : pluie de pixels, compteur animé, ouverture de carte</li>
+            <li>Album photo animé en forme de cœur avec transitions React</li>
+            <li>Gestion d'état et de transitions fluides</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag">React</span><span class="tag">Animations</span><span class="tag">CSS Transitions</span><span class="tag">JSX</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. Application C++ -->
+      <article class="project-card" data-reveal>
+        <div class="project-banner"></div>
+        <div class="project-body">
+          <div class="project-top">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+            </div>
+            <div class="project-badges">
+              <span class="badge badge-emerald">Projet académique</span>
+            </div>
+          </div>
+          <h3 class="project-title">Application console de gestion d'articles (C++)</h3>
+          <div class="project-meta">
+            <span>Janv. – Mars 2025</span><span class="dot"></span>
+            <span>C++</span>
+          </div>
+          <p class="project-desc">
+            Application console en C++ avec menu interactif permettant la gestion complète d'un catalogue
+            d'articles. Données persistantes via un répertoire texte structuré.
+          </p>
+          <ul class="project-bullets">
+            <li>Menu interactif : ajout, modification, suppression, recherche</li>
+            <li>Plusieurs caractéristiques par article</li>
+            <li>Persistance via fichiers texte structurés</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag">C++</span><span class="tag">POO</span><span class="tag">Fichiers</span><span class="tag">Structures de données</span>
+          </div>
+        </div>
+      </article>
+      <!-- 6. Application mobile Flutter -->
+      <article class="project-card" data-reveal>
+        <div class="project-banner"></div>
+        <div class="project-body">
+          <div class="project-top">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+            </div>
+            <div class="project-badges">
+              <span class="badge badge-emerald">Projet académique</span>
+            </div>
+          </div>
+          <h3 class="project-title">Application mobile Flutter — Auth &amp; accueil</h3>
+          <div class="project-meta">
+            <span>Mars – Avril 2024</span><span class="dot"></span>
+            <span>Flutter / Dart</span>
+          </div>
+          <p class="project-desc">
+            Application mobile développée en Flutter durant la 2ème année : flux d'authentification
+            avec navigation vers un écran d'accueil personnalisé affichant un message de bienvenue
+            à l'utilisateur connecté.
+          </p>
+          <ul class="project-bullets">
+            <li>Écran d'authentification avec formulaire de connexion</li>
+            <li>Navigation entre écrans via <code style="font-family:var(--mono);font-size:0.85em;background:var(--surface-2);padding:1px 5px;border-radius:4px;">Navigator.push</code></li>
+            <li>Écran d'accueil avec message de bienvenue personnalisé</li>
+            <li>Design Material responsive adapté Android &amp; iOS</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Material Design</span><span class="tag">Auth</span><span class="tag">Navigation</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FORMATION -->
+<section class="education" id="formation">
+  <div class="container">
+    <div class="section-head" data-reveal style="text-align:center; margin: 0 auto 56px;">
+      <div class="section-label" style="margin: 0 auto 14px;">Parcours</div>
+      <h2 class="section-title"><em>Formation</em></h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item featured" data-reveal="left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-year">★ 2023 – 2026 · Diplôme obtenu</div>
+          <div class="timeline-title">Licence Professionnelle — Systèmes Informatiques et Logiciel</div>
+          <div class="timeline-school">UATM GASA-FORMATION — Cotonou, Bénin</div>
+          <div class="timeline-detail">
+            Formation approfondie en développement logiciel, conception de bases de données et design
+            d'interfaces. <strong>Projet de fin d'études soutenu en binôme avec Mention Excellente.</strong>
+            <br><br>
+            <strong>Cours clés :</strong> UX/UI Design · Programmation avancée (C++, Python, Java, PHP) ·
+            Bases de données (MySQL, PostgreSQL, Merise, UML) · Développement Web (JavaScript, React, Next.js, Node.js).
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-reveal="left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-year">2022 – 2023</div>
+          <div class="timeline-title">Baccalauréat Série D</div>
+          <div class="timeline-school">Lycée Privé KIBALA</div>
+          <div class="timeline-detail">
+            Baccalauréat scientifique — dominante mathématiques et sciences de la matière.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LANGUES + QUALITÉS -->
+<section class="lq" id="langues">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div class="section-label">Profil humain</div>
+      <h2 class="section-title">Langues &amp; <em>qualités</em></h2>
+    </div>
+
+    <div class="lq-grid">
+      <div class="lq-block" data-reveal="left">
+        <h3>Langues</h3>
+        <div class="lang-list">
+          <div class="lang-row">
+            <div class="lang-flag">🇫🇷</div>
+            <div class="lang-info">
+              <div class="lang-name">Français</div>
+              <div class="lang-level">Excellent — langue de travail</div>
+            </div>
+            <div class="lang-rating" data-rating="5"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+          </div>
+          <div class="lang-row">
+            <div class="lang-flag">🇬🇧</div>
+            <div class="lang-info">
+              <div class="lang-name">Anglais</div>
+              <div class="lang-level">Moyen — technique & documentation</div>
+            </div>
+            <div class="lang-rating" data-rating="2"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+          </div>
+          <div class="lang-row">
+            <div class="lang-flag">🇸🇦</div>
+            <div class="lang-info">
+              <div class="lang-name">Arabe</div>
+              <div class="lang-level">Lu et écrit</div>
+            </div>
+            <div class="lang-rating" data-rating="1"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lq-block" data-reveal="right">
+        <h3>Qualités</h3>
+        <div class="qualities">
+          <div class="quality">
+            <div class="quality-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div>
+              <div class="quality-title">Esprit d'équipe & adaptation</div>
+              <div class="quality-desc">J'ai soutenu mon projet de fin d'études en binôme et je m'intègre rapidement dans une équipe pluridisciplinaire.</div>
+            </div>
+          </div>
+          <div class="quality">
+            <div class="quality-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <div>
+              <div class="quality-title">Dynamique & ouvert à l'apprentissage</div>
+              <div class="quality-desc">Je me forme en continu sur OpenClassrooms et explore de nouvelles technos (Next.js, Supabase) en parallèle des cours.</div>
+            </div>
+          </div>
+          <div class="quality">
+            <div class="quality-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <div class="quality-title">Discrétion & respect de la hiérarchie</div>
+              <div class="quality-desc">Je travaille avec rigueur, respecte les processus établis et sais faire preuve de confidentialité sur les projets sensibles.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TÉMOIGNAGES -->
+<section class="testimonials" id="temoignages">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div class="section-label">Recommandations</div>
+      <h2 class="section-title">Témoignages &amp; <em>références</em></h2>
+      <p class="section-intro">
+        Des recommandations de mon encadrant de projet, de mes enseignants ou de mes collaborateurs
+        arriveront ici prochainement. En attendant, mon CV et mes projets parlent pour moi.
+      </p>
+    </div>
+
+    <div class="test-grid">
+      <div class="test-card test-empty" data-reveal>
+        <div class="test-empty-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 11h-6M19 8v6"/></svg>
+        </div>
+        <h4>Encadrant académique</h4>
+        <p>Recommandation de l'encadrant du projet Mont Sinaï à venir.</p>
+      </div>
+      <div class="test-card test-empty" data-reveal>
+        <div class="test-empty-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <h4>Enseignant référent</h4>
+        <p>Témoignage d'un enseignant de l'UATM GASA-FORMATION à venir.</p>
+      </div>
+      <div class="test-card test-empty" data-reveal>
+        <div class="test-empty-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg>
+        </div>
+        <h4>Binôme de projet</h4>
+        <p>Retour de mon binôme sur le projet de fin d'études à venir.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container contact-inner">
+    <div data-reveal>
+      <div class="section-label" style="margin: 0 auto 14px; display: inline-flex;">Travaillons ensemble</div>
+      <h2 class="section-title">Me <em>contacter</em></h2>
+      <p class="contact-text">
+        Je suis ouvert aux opportunités de <strong style="color:#fff">premier emploi</strong>,
+        de <strong style="color:#fff">stage</strong> et aux collaborations sur des projets ambitieux.
+        Réponse sous 24 heures.
+      </p>
+    </div>
+
+    <div class="contact-cards">
+      <a href="mailto:ahamedabdouikhlaas@gmail.com" class="contact-card" data-reveal>
+        <div class="contact-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">ahamedabdouikhlaas@gmail.com</div>
+        </div>
+      </a>
+
+      <a href="tel:+2290198004785" class="contact-card" data-reveal>
+        <div class="contact-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">Téléphone</div>
+          <div class="contact-value">+229 01 98 00 47 85</div>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/ikhlaas-ahamed-abdou-5514a9420" target="_blank" rel="noopener" class="contact-card" data-reveal>
+        <div class="contact-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value">ikhlaas-ahamed-abdou</div>
+        </div>
+      </a>
+
+      <a href="CV_Ikhlaas_Ahamed_Abdou.pdf" download class="contact-card" data-reveal>
+        <div class="contact-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">CV — PDF</div>
+          <div class="contact-value">Télécharger mon CV complet</div>
+        </div>
+      </a>
+    </div>
+
+    <a href="CV_Ikhlaas_Ahamed_Abdou.pdf" download class="contact-cta" data-reveal>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Télécharger mon CV (PDF)
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Ikhlaas Ahamed Abdou<span>.</span></div>
+    <p>© 2026 — Développeur Full-Stack · Conçu à Cotonou, Bénin<br>
+    Next.js · React · Node.js · PostgreSQL &middot; <a href="CV_Ikhlaas_Ahamed_Abdou.pdf" download>Télécharger le CV</a></p>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
